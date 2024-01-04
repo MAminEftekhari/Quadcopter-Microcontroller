@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"week7\startup_stm32f103xb.o"
+"week7\main.o"
+"week7\stm32f1xx_it.o"
+"week7\stm32f1xx_hal_msp.o"
+"week7\stm32f1xx_hal_uart.o"
+"week7\stm32f1xx_hal_gpio_ex.o"
+"week7\stm32f1xx_hal_adc.o"
+"week7\stm32f1xx_hal_adc_ex.o"
+"week7\stm32f1xx_hal.o"
+"week7\stm32f1xx_hal_rcc.o"
+"week7\stm32f1xx_hal_rcc_ex.o"
+"week7\stm32f1xx_hal_gpio.o"
+"week7\stm32f1xx_hal_dma.o"
+"week7\stm32f1xx_hal_cortex.o"
+"week7\stm32f1xx_hal_pwr.o"
+"week7\stm32f1xx_hal_flash.o"
+"week7\stm32f1xx_hal_flash_ex.o"
+"week7\stm32f1xx_hal_exti.o"
+"week7\stm32f1xx_hal_i2c.o"
+"week7\stm32f1xx_hal_tim.o"
+"week7\stm32f1xx_hal_tim_ex.o"
+"week7\system_stm32f1xx.o"
+--strict --scatter "week7\week7.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "week7.map" -o week7\week7.axf
